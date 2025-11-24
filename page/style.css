@@ -1,0 +1,354 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+	color: black;
+}
+
+#background-container {
+	width: 100%;
+    height: 100%;
+    background-image: url(../pic/fon1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;  
+    position: relative;
+	overflow: hidden;
+}
+#offer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    max-width: 800px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: White;
+    font-size: 45px;
+    line-height: 1.2;
+    z-index: 1;
+    padding: 10px;
+}
+#background-container ul {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Делает элементы списка в ряд */
+  justify-content: center; /* Центрирует элементы навигации */
+  position: relative; /* Чтобы z-index работал, если что */
+  z-index: 10; /* Убедимся, что навигация выше всего */
+  padding-top: 20px; /* Отступ сверху для навигации */
+}
+#background-container ul li {
+  margin: 0 15px; /* Отступы между пунктами меню */
+}
+
+#background-container ul li a {
+  color: white; /* Цвет текста ссылок */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-size: 2.0rem; /* Размер шрифта для ссылок */
+  padding: 5px 10px;
+  transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+#background-container ul li a:hover {
+  color: lightgray; /* Цвет при наведении */
+  text-decoration: underline; 
+}
+
+#background-container2 {
+  width: 100%;
+    height: 40%;
+    background-image: url(../pic/fon1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    position: relative;
+    overflow: hidden;
+}
+#background-container2 ul {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Делает элементы списка в ряд */
+  justify-content: center; /* Центрирует элементы навигации */
+  position: relative; /* Чтобы z-index работал, если что */
+  z-index: 10; /* Убедимся, что навигация выше всего */
+  padding-top: 20px; /* Отступ сверху для навигации */
+}
+#background-container2 ul li {
+  margin: 0 15px; /* Отступы между пунктами меню */
+}
+
+#background-container2 ul li a {
+  color: white; /* Цвет текста ссылок */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-size: 2.0rem; /* Размер шрифта для ссылок */
+  padding: 5px 10px;
+  transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+#background-container2 ul li a:hover {
+  color: lightgray; /* Цвет при наведении */
+  text-decoration: underline; 
+}
+
+
+.zag1{  
+  color: black;
+  font-size: 30px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 20px;
+  left: 650px;
+}
+
+.zag1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 670px;
+  height: 2px;
+  background-color: gray;
+  left: -300;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zag2{
+	position: absolute;
+	top: 685px;
+	left: 250px;
+	text-align: center;
+	color: darkblue;
+}
+.main{
+	box-shadow: 0px 0px 3px 1px lightgray;
+    position: absolute;
+	left: 150px;
+	right: 150px;
+	top: 650px;
+	text-align: left;
+	z-index: 3;
+	font-size: 17px;
+}
+
+
+table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    td {
+        vertical-align: top;
+        padding: 10px; 
+        width: 33.33%; 
+    }
+
+    .card-item {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .card-item img {
+        width: 100%; 
+        height: 250px;
+        object-fit: cover;
+        display: block; 
+        margin-bottom: 10px; 
+    }
+
+    .card-content {
+        text-align: left; 
+        flex-grow: 1;
+    }
+
+    .card-content b { 
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+.faq-list {
+    list-style: none;
+    padding: 0;
+}
+.faq-item {
+    margin-bottom: 30px;
+    border-left: 3px solid #007bff;
+    padding-left: 15px;
+}
+.faq-question {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.faq-answer {
+    color: #555;
+}
+ strong {
+    color: #333; 
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Шрифты для заголовков */
+h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+h2.section-title {
+    font-size: 2em;
+    position: relative;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+h2.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 80px;
+    height: 3px;
+    background-color: #5b9bd5;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #4a6c8b;
+    text-align: left; /* Заголовки внутри блоков*/
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: #4a6c8b;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Стили для блоков услуг */
+.service-block {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Отступы между элементами внутри блока */
+}
+
+.service-content p {
+    margin: 0 0 10px 0;
+    text-align: justify;
+}
+
+/* Информационные карточки (предупреждения, включено, акценты) */
+.info-card {
+    background-color: #f9f9f9;
+    border-left: 5px solid;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 0.95em;
+}
+
+.info-card.warning {
+    border-color: #e74c3c; /* Красный для предупреждений */
+    background-color: #fcecec;
+}
+
+.info-card.included {
+    border-color: #27ae60; /* Зеленый для включенного */
+    background-color: #e9f7ef;
+}
+
+.info-card.highlight {
+    border-color: #f39c12; /* Оранжевый для акцентов */
+    background-color: #fff8eb;
+    font-weight: 500;
+}
+
+.info-card p {
+    margin: 0;
+    text-align: left;
+}
+
+/* Списки цен */
+.price-list ul {
+    list-style: none; 
+    padding: 0;
+    margin: 10px 0;
+}
+
+.price-list ul li {
+    background-color: #ecf0f1;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.price-list p.note {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Стили для отдельных экскурсий */
+.excursion-item {
+    background-color: #fefefe;
+    border: 1px solid #e1e8ed;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.excursion-item:last-child {
+    margin-bottom: 0;
+}
+.foto {
+    width: 70%; 
+    height: auto; 
+    position: relative;
+    display: block;
+    max-width: 100%; 
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 30px; 
+    margin-left: auto;
+    margin-right: auto;
+
+}
